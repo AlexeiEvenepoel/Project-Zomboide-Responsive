@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    
+    /* que no crescan mas alla del tamaño que se le dio */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    color: white;
+    margin: 0;
+    background-color: rgb(37, 36, 36);
+}
+/* Header */
+header{
+    font-weight: 800;
+}
+
+h1{font-size: 2em;font-weight: 800;}
+h2{font-size: 1.5em;font-weight: 700;}
+h3{font-size: 1.17em;font-weight: 600;}
+p{font-size: 1em;font-weight: lighter;}
+ul{list-style: none;}
+li{font-size: 1em;}
+button{
+    font-size: 1em;
+    font-weight: 100;
+    padding: 2px 16px;
+    border-radius: 7px;
+    border: 2px solid rgb(12, 11, 11);
+    box-shadow: 2px 2px 5px rgb(44, 8, 44);
+    color:white ;
+    background-color: #800080;
+
+}
+button:hover{
+    background-color: #570957;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+/* header logo selecciona no hace falta poner mas nombre a la clase */
+header{
+    background-color: rgb(43, 42, 42);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+header .logo{
+    margin: 0;
+    padding: 25px 10px;
+    font-size: 2em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(53, 193, 248);
+    
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+header li{
+    padding: 5px 10px;
+}
+header a{
+    text-decoration: none;
+    color: white;    
+}
+header a:hover{
+    color: rgb(36, 129, 168);
+}
