@@ -111,7 +111,59 @@ header a:hover{
 
 #what-is-pz .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+}
+/* que la imagen what is pz se adapte al diseño responsive */
+#what-is-pz .img-container{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#what-is-pz img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
 }
 
+.color-acento{
+    color: rgb(53, 193, 248);
+}
+
+#what-is-pz .container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#what-is-pz p{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;  
+}
+
+#professions {
+    background-color: rgb(215, 241, 241);
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#professions .container{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: 95vh;
+}
+#professions p{
+    /* desaparecemos el texto p */
+    display: none;
+}
