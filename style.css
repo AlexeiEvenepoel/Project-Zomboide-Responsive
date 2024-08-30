@@ -4,6 +4,9 @@
     /* que no crescan mas alla del tamaño que se le dio */
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: "Raleway", sans-serif;
@@ -51,7 +54,7 @@ header{
 header .container{
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     
 }
 
@@ -59,16 +62,13 @@ header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px;
-    
+    padding-bottom: 20px;
 }
 header .logo{
     margin: 0;
     padding: 25px 10px;
     font-size: 2em;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
     text-decoration: none;
     color: rgb(53, 193, 248);
     
@@ -76,8 +76,6 @@ header .logo{
 header ul{
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
     
 }
 header li{
@@ -109,17 +107,37 @@ header a:hover{
     background-position: center center; /* Centra la imagen */
 }
 
+#presentation img{
+    margin-bottom: 50px;
+}
+
+#presentation h1{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+#presentation button{
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+
+#what-is-pz{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #what-is-pz .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 90vh;
 }
 /* que la imagen what is pz se adapte al diseño responsive */
 #what-is-pz .img-container{
-    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,9 +179,393 @@ header a:hover{
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    height: 95vh;
+
 }
 #professions p{
     /* desaparecemos el texto p */
     display: none;
+}
+
+#professions h2{
+    font-size: 2.2em;
+    margin: 13px;
+}
+
+#professions .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+#professions .card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/carpintero.jpg");
+}
+
+#professions .card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/bombero.jpg");
+
+}
+
+#professions .card:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/cocinero.jfif");
+}
+
+#habilities .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 150px 0;
+}
+
+#habilities ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw; /* Ajusta el ancho para que quepan dos elementos en una fila */
+    border-radius: 15px;
+}
+
+#habilities li {
+    width: 50%; /* Cada elemento ocupará la mitad del ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total */
+    padding: 50px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#habilities li:nth-child(1){
+    background-color: rgb(124, 156, 168);
+}
+
+#habilities li:nth-child(2){
+    background-color: rgb(124, 168, 150);
+}
+
+#habilities li:nth-child(3){
+    background-color: rgb(168, 124, 145);
+}
+
+#habilities li:nth-child(4){
+    background-color: rgb(137, 124, 168);
+}
+
+#cities {
+    background-color: rgb(215, 241, 241);
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#cities .container{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+
+}
+#cities p{
+    /* desaparecemos el texto p */
+    display: none;
+}
+
+#cities h2{
+    font-size: 2.2em;
+    margin: 13px;
+}
+
+#cities .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+#cities .card-WP{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/westpoint.png");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+#cities .card-RV{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("media/riverside.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+#cities .card-MD{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        /* poner en horizonal la imagen */
+
+    )
+    ,url("media/muldraugh.png");
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+footer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header nav{
+        width: 100%;
+        flex-direction: row;
+        padding-bottom: 0;
+        justify-content: space-between;
+    }
+    header a{
+        padding-bottom: 20px;
+    }
+    
+    header ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #presentation{
+        height: 100vh;
+        background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.8)
+    )
+    ,url("media/presentation-pc.jpg");
+    }
+    
+
+    #presentation h1{
+        font-size: 3em;
+    }
+
+    #what-is-pz .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /* que la imagen what is pz se adapte al diseño responsive */
+    #what-is-pz .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Ajusta la altura automáticamente */
+        border-radius: 10px;
+        flex: 1; /* Permite que el contenedor de la imagen ocupe más espacio */
+    }
+    
+    #what-is-pz img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    #what-is-pz .container-text {
+        height: 50vh;
+        flex: 1; /* Permite que el contenedor de texto ocupe el mismo espacio que la imagen */
+        font-size: 1.5em; /* Ajusta el tamaño de la fuente */
+        padding-left: 90px; /* Añade padding para espaciar el contenido */
+        line-height: 1.6; /* Ajusta la altura de línea para mejorar la legibilidad */
+    }
+
+    #professions{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    #professions .container{
+        height: 70vh;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    
+    }
+
+    #professions .container-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #professions h2{
+        font-size: 3.2em;
+    }
+
+    #professions h3{
+        font-size: 2.2em;
+        margin-top: 10px;
+        color: aqua;
+    }
+
+    #professions p{
+        display: block;
+        margin: 30px;
+    }
+
+    #professions button{
+        margin-bottom: 20px;
+    }
+
+    #professions .card{
+        padding: 15px;
+    }
+    /* poner un dropshadow en cada card */
+    #professions .card{
+        box-shadow: 5px 5px 5px rgb(161, 33, 134);
+    }
+
+    #habilities{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    #habilities .container{
+        padding: 0;
+        margin: 0;
+    }
+
+    #habilities h2{
+        font-size: 3.2em;
+    }
+    #habilities ul{
+        font-size: 2.4em;
+        height: 50vh;
+        margin: 0;
+        padding: 75px 0px;
+    }
+
+    #habilities li{
+        height: auto;;
+    }
+
+    #cities{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    #cities .container{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #cities .container-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #cities h2{
+        font-size: 3.2em;
+    }
+
+    #cities h3{
+        font-size: 2.2em;
+        margin-top: 10px;
+        color: aqua;
+    }
+    #cities p{
+        display: block;
+        margin: 30px;
+    }
+
+    #cities .card-WP{
+        box-shadow: 5px 5px 5px rgb(161, 33, 134);
+    }
+    #cities .card-RV{
+        box-shadow: 5px 5px 5px rgb(161, 33, 134);
+    }
+    #cities .card-MD{
+        box-shadow: 5px 5px 5px rgb(161, 33, 134);
+    }
+
+    footer{
+        align-items: flex-end;
+    }
+
+    footer .container{
+        align-items: flex-end;
+    }
 }
