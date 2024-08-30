@@ -379,6 +379,12 @@ footer{
     header a{
         padding-bottom: 20px;
     }
+    header li a:hover{
+        color: rgb(36, 129, 168);
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: rgb(36, 129, 168);
+    }
     
     header ul{
         display: flex;
@@ -404,7 +410,7 @@ footer{
     #what-is-pz .container{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
     }
